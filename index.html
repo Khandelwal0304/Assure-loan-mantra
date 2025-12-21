@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assure Loan Mintra - India's leading loan distribution platform. Get instant personal loans, home loans, business loans with best interest rates. Check CIBIL score free. Become a loan partner.">
+    <meta name="keywords" content="personal loan, home loan, business loan, loan against property, education loan, CIBIL score, loan partner, DSA, loan agent">
+    <meta name="author" content="Assure Loan Mintra">
+    <title>Assure Loan Mintra - India's Leading Loan Distribution Platform | Best Loan Rates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Assure Loan Mintra",
+        "description": "India's leading loan distribution platform",
+        "url": "https://assureloanmintra.com",
+        "logo": "https://assureloanmintra.com/logo.png"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shield-alt"></i>
+                        <h1>Assure Loan Mintra</h1>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                        <li><a href="cibil-check.html">Check CIBIL Score</a></li>
+                        <li><a href="become-partner.html">Become Partner</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="partner-login.html" class="btn-partner"><i class="fas fa-user-tie"></i> Partner Login</a>
+                    <button class="btn-signin"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Loan Offers -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span><i class="fas fa-shield-alt"></i> Secure</span>
+                    <span><i class="fas fa-check-circle"></i> Simple</span>
+                    <span><i class="fas fa-brain"></i> Smart</span>
+                </div>
+                <h1>Get Loans Up to ₹5 Crores at Best Interest Rates</h1>
+                <p class="hero-subtitle">Connect with 100+ Banks & NBFCs | Instant Approval | Zero Processing Fee*</p>
+                <div class="hero-offers">
+                    <div class="offer-badge">
+                        <i class="fas fa-percent"></i>
+                        <span>Interest Rates from <strong>8.5%</strong> p.a.</span>
+                    </div>
+                    <div class="offer-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>Approval in <strong>24 Hours</strong></span>
+                    </div>
+                    <div class="offer-badge">
+                        <i class="fas fa-check-circle"></i>
+                        <span><strong>Zero</strong> Processing Fee*</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#quick-apply" class="btn-primary"><i class="fas fa-rocket"></i> Apply Now - Free</a>
+                    <a href="cibil-check.html" class="btn-secondary"><i class="fas fa-chart-line"></i> Check CIBIL Score Free</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Apply Form -->
+    <section class="quick-apply" id="quick-apply">
+        <div class="container">
+            <h2 class="section-title">Get Instant Loan Approval</h2>
+            <div class="apply-form-wrapper">
+                <form id="quickApplyForm" class="apply-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-mobile-alt"></i> Mobile Number</label>
+                            <input type="tel" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> Email ID</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-city"></i> City</label>
+                            <select name="city" required>
+                                <option value="">Select City</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="pune">Pune</option>
+                                <option value="kolkata">Kolkata</option>
+                                <option value="ahmedabad">Ahmedabad</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-hand-holding-usd"></i> Loan Type</label>
+                            <select name="loanType" required>
+                                <option value="">Select Loan Type</option>
+                                <option value="personal">Personal Loan</option>
+                                <option value="home">Home Loan</option>
+                                <option value="business">Business Loan</option>
+                                <option value="lap">Loan Against Property</option>
+                                <option value="education">Education Loan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-rupee-sign"></i> Loan Amount</label>
+                            <input type="number" name="loanAmount" placeholder="Enter loan amount" min="50000" max="50000000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            <span>I agree to the <a href="terms.html">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Apply Now - Get Instant Approval
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free CIBIL Check CTA -->
+    <section class="cibil-cta">
+        <div class="container">
+            <div class="cibil-cta-content">
+                <div class="cibil-text">
+                    <h2>Check Your CIBIL Score Free - No Credit Card Required</h2>
+                    <p>Know your credit score instantly and get personalized loan recommendations</p>
+                    <ul class="cibil-benefits">
+                        <li><i class="fas fa-check"></i> Free CIBIL Score Check</li>
+                        <li><i class="fas fa-check"></i> Instant Results</li>
+                        <li><i class="fas fa-check"></i> Personalized Loan Recommendations</li>
+                        <li><i class="fas fa-check"></i> Credit Health Tips</li>
+                    </ul>
+                    <a href="cibil-check.html" class="btn-cibil">Check CIBIL Score Now - Free</a>
+                </div>
+                <div class="cibil-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Categories -->
+    <section class="loan-categories">
+        <div class="container">
+            <h2 class="section-title">Choose Your Loan Product</h2>
+            <div class="loan-grid">
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personal Loan</h3>
+                    <div class="loan-rate">Interest: 10.5% - 24% p.a.</div>
+                    <div class="loan-amount">Amount: Up to ₹40 Lakhs</div>
+                    <p>Get instant personal loans for your immediate financial needs</p>
+                    <a href="personal-loan.html" class="btn-card">Apply Now</a>
+                </div>
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Loan</h3>
+                    <div class="loan-rate">Interest: 8.5% - 12% p.a.</div>
+                    <div class="loan-amount">Amount: Up to ₹5 Crores</div>
+                    <p>Fulfill your dream of owning a home with flexible home loan options</p>
+                    <a href="home-loan.html" class="btn-card">Apply Now</a>
+                </div>
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Loan</h3>
+                    <div class="loan-rate">Interest: 9.5% - 18% p.a.</div>
+                    <div class="loan-amount">Amount: Up to ₹50 Crores</div>
+                    <p>Grow your business with tailored business loan solutions</p>
+                    <a href="business-loan.html" class="btn-card">Apply Now</a>
+                </div>
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Loan Against Property</h3>
+                    <div class="loan-rate">Interest: 9% - 15% p.a.</div>
+                    <div class="loan-amount">Amount: Up to ₹10 Crores</div>
+                    <p>Get loans against your property with flexible repayment options</p>
+                    <a href="loan-against-property.html" class="btn-card">Apply Now</a>
+                </div>
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education Loan</h3>
+                    <div class="loan-rate">Interest: 8% - 12% p.a.</div>
+                    <div class="loan-amount">Amount: Up to ₹1 Crore</div>
+                    <p>Invest in your future with our education loan programs</p>
+                    <a href="education-loan.html" class="btn-card">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works - Simple 4-Step Process</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Apply Online</h3>
+                    <p>Fill simple form with basic details - takes just 2 minutes</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Get Verified</h3>
+                    <p>OTP verification and instant eligibility check</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <i class="fas fa-handshake"></i>
+                    <h3>Match with Lenders</h3>
+                    <p>We match you with best banks & NBFCs based on your profile</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <i class="fas fa-money-check-alt"></i>
+                    <h3>Get Disbursed</h3>
+                    <p>Receive loan approval and get money in your account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Banks & NBFCs -->
+    <section class="partner-lenders">
+        <div class="container">
+            <h2 class="section-title">Trusted by 100+ Banks & NBFCs</h2>
+            <p class="section-subtitle">We partner with India's leading financial institutions</p>
+            <div class="lenders-grid">
+                <div class="lender-logo">HDFC Bank</div>
+                <div class="lender-logo">ICICI Bank</div>
+                <div class="lender-logo">Axis Bank</div>
+                <div class="lender-logo">SBI</div>
+                <div class="lender-logo">Bajaj Finserv</div>
+                <div class="lender-logo">Kotak Mahindra</div>
+                <div class="lender-logo">Yes Bank</div>
+                <div class="lender-logo">IDFC First</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become Partner Section -->
+    <section class="become-partner-cta">
+        <div class="container">
+            <div class="partner-cta-content">
+                <div class="partner-text">
+                    <h2>Become a Loan Partner & Earn Unlimited Commissions</h2>
+                    <p>Join India's fastest growing loan distribution network. Zero investment required.</p>
+                    <ul class="partner-benefits">
+                        <li><i class="fas fa-check"></i> Earn up to ₹50,000 per loan</li>
+                        <li><i class="fas fa-check"></i> Access to 100+ Banks & NBFCs</li>
+                        <li><i class="fas fa-check"></i> Free training & certification</li>
+                        <li><i class="fas fa-check"></i> Real-time lead tracking</li>
+                        <li><i class="fas fa-check"></i> Weekly commission payouts</li>
+                    </ul>
+                    <a href="become-partner.html" class="btn-partner-cta">Become a Partner - Free Registration</a>
+                </div>
+                <div class="partner-image">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Assure Loan Mintra?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon secure">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Secure & Encrypted</h3>
+                    <p>Bank-level security with SSL encryption. Your data is completely safe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon simple">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Approval</h3>
+                    <p>Get loan approval within 24 hours. Fastest in the industry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon smart">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Best Interest Rates</h3>
+                    <p>Compare rates from 100+ lenders and get the best deal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon secure">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your queries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon simple">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Minimal Documentation</h3>
+                    <p>Simple application process with minimal paperwork required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon smart">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Zero Processing Fee*</h3>
+                    <p>Apply for free. No hidden charges. Transparent pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2 class="stat-number">50K+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number">₹500Cr+</h2>
+                    <p>Loans Disbursed</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number">100+</h2>
+                    <p>Partner Banks & NBFCs</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="stat-number">4.8/5</h2>
+                    <p>Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Got my personal loan approved within 24 hours! The process was so simple and the interest rate was better than what I was getting elsewhere."</p>
+                    <h4>- Rajesh Kumar, Mumbai</h4>
+                    <span class="testimonial-loan">Personal Loan - ₹5 Lakhs</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best platform for home loans. They matched me with the perfect bank and I got the best interest rate. Highly recommended!"</p>
+                    <h4>- Priya Sharma, Delhi</h4>
+                    <span class="testimonial-loan">Home Loan - ₹50 Lakhs</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"As a loan partner, I'm earning great commissions. The platform is easy to use and the support team is very helpful."</p>
+                    <h4>- Amit Patel, Partner</h4>
+                    <span class="testimonial-loan">Earned ₹2.5 Lakhs in 3 months</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faqs">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the minimum credit score required for a loan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generally, a credit score of 650 or above is preferred. However, we work with various banks and NBFCs that have different requirements. Some lenders may approve loans even with a score of 600+.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to get loan approval?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Loan approval typically takes 24-48 hours after submission of all required documents. Some loans may be approved faster, especially personal loans which can be approved within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there any processing fee?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many of our partner banks offer zero processing fee during promotional periods. Processing fees, when applicable, typically range from 0.5% to 2% of the loan amount depending on the lender and loan type.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I check my loan application status online?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can track your loan application status through our partner portal or by logging into your account. You'll also receive regular updates via SMS and email at each stage of the process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I become a loan partner?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can register as a loan partner by filling out our partner registration form. Once approved, you'll get access to our partner dashboard, training materials, and can start earning commissions by referring customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Assure Loan Mintra</h3>
+                    <p>India's leading loan distribution platform connecting customers with 100+ banks and NBFCs. Secure, Simple & Smart Banking.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Loan Products</h4>
+                    <ul>
+                        <li><a href="personal-loan.html">Personal Loan</a></li>
+                        <li><a href="home-loan.html">Home Loan</a></li>
+                        <li><a href="business-loan.html">Business Loan</a></li>
+                        <li><a href="loan-against-property.html">Loan Against Property</a></li>
+                        <li><a href="education-loan.html">Education Loan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                        <li><a href="cibil-check.html">Check CIBIL Score</a></li>
+                        <li><a href="become-partner.html">Become Partner</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal & Compliance</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="data-usage-policy.html">Data Usage Policy</a></li>
+                        <li><a href="grievance-policy.html">Grievance Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 1800-XXX-XXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@assureloanmintra.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 9 AM - 6 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Assure Loan Mintra. All rights reserved. | Secure, Simple & Smart Banking</p>
+                <p class="footer-disclaimer">*Terms and conditions apply. Interest rates and processing fees vary by lender and loan type.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

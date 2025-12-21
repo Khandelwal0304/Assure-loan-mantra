@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Login - Assure Loan Mintra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shield-alt"></i>
+                        <h1>Assure Loan Mintra</h1>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="emi-calculator.html">EMI Calculator</a></li>
+                        <li><a href="cibil-check.html">Check CIBIL Score</a></li>
+                        <li><a href="become-partner.html">Become Partner</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="partner-login.html" class="btn-partner"><i class="fas fa-user-tie"></i> Partner Login</a>
+                    <button class="btn-signin"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="container">
+            <div class="login-wrapper">
+                <div class="login-card">
+                    <h2>Partner Login</h2>
+                    <p>Access your partner dashboard</p>
+                    <form id="partnerLoginForm">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Partner ID / Mobile Number</label>
+                            <input type="text" name="partnerId" placeholder="Enter Partner ID or Mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-lock"></i> Password</label>
+                            <input type="password" name="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span>Remember me</span>
+                            </label>
+                            <a href="#" style="float: right; color: var(--primary-color);">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn-submit">Login</button>
+                        <p style="text-align: center; margin-top: 1rem;">
+                            Not a partner? <a href="become-partner.html" style="color: var(--primary-color);">Register Now</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    .login-section {
+        padding: 5rem 0;
+        min-height: 70vh;
+        background: var(--bg-light);
+    }
+    .login-wrapper {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .login-card {
+        background: var(--white);
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+    }
+    .login-card h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+    }
+    .login-card > p {
+        text-align: center;
+        color: var(--text-light);
+        margin-bottom: 2rem;
+    }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
